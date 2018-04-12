@@ -331,7 +331,7 @@ marking if it still had that."
 	  (mu4e~view-make-urls-clickable)
 	  (mu4e~view-show-images-maybe msg)
 	  (when embedded (local-set-key "q" 'kill-buffer-and-window))
-          (unless mode-enabled (run-mode-hooks 'mu4e-view-mode-hook)))))
+    (run-mode-hooks 'mu4e-view-mode-hook))))
     (switch-to-buffer buf)))
 
 (defun mu4e~view-get-property-from-event (prop)
